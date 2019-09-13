@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>DocSaveExampleEar</artifactId>
+	<packaging>ear</packaging>
+	<parent>
+		<groupId>DocSaveExample</groupId>
+		<artifactId>DocSaveExample</artifactId>
+		<version>tbm_work-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>DocSaveExample</groupId>
+			<artifactId>DocSaveExampleWar</artifactId>
+			<version>tbm_work-SNAPSHOT</version>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.10</version>
+				<configuration>
+					<version>6</version>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<skinnyWars>true</skinnyWars>
+					<initialize-in-order>true</initialize-in-order>
+					<modules>
+						<webModule>
+							<groupId>DocSaveExample</groupId>
+							<artifactId>DocSaveExampleWar</artifactId>
+							<contextRoot>/docSaveExample</contextRoot>
+							<moduleId>DocSaveExample</moduleId>
+						</webModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>DocSaveExample</groupId>
+	<artifactId>DocSaveExample</artifactId>
+	<version>tbm_work-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <version.TtiJavaArchitecture>2.1.2-SNAPSHOT</version.TtiJavaArchitecture>
+		<jars.release>ExpressMavenJars-Release</jars.release>
+		<java.compiler.version>1.8</java.compiler.version>
+		<java.compiler.source>1.8</java.compiler.source>
+		<java.compiler.target>1.8</java.compiler.target>
+		<maven.jar.version>3.0.0</maven.jar.version>
+		<maven.compiler.version>3.7.0</maven.compiler.version>
+		<maven.ear.version>2.10</maven.ear.version>
+		<maven.war.version>3.0.0</maven.war.version>
+		<maven.ejb.version>3.0.0</maven.ejb.version>
+		<maven.source.version>3.0.0</maven.source.version>
+		<tti_ant.version>1.8</tti_ant.version>
+		<project.TtiJavaArchitectureDependencies.spring.security>4.2.8.RELEASE</project.TtiJavaArchitectureDependencies.spring.security>
+		<project.TtiJavaArchitectureDependencies.spring>4.3.19.RELEASE</project.TtiJavaArchitectureDependencies.spring>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jars.release>ExpressMavenJars-Release</jars.release>
+		<jackson.version>2.9.7</jackson.version>
+	</properties>
+	<modules>
+		<module>DocSaveExampleWar</module>
+		<module>DocSaveExampleEar</module>
+	</modules>
+</project>
